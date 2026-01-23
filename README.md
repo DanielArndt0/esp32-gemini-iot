@@ -230,9 +230,9 @@ This project is designed to demonstrate:
 
 ## Author
 
-**Daniel Gier Arndt**  
+**Daniel Gier Arndt**
 Embedded systems, electronics and applied AI  
-YouTube: [*@LabEmbarcado*](youtube.com/@LabEmbarcado)
+YouTube: [*@LabEmbarcado*](https://www.youtube.com/@LabEmbarcado)
 
 ---
 
