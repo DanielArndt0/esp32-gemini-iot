@@ -18,40 +18,6 @@ This project demonstrates how to bring AI-generated text into a constrained embe
 
 ---
 
-## Architecture Overview
-
-The project is organized into clear, responsibility-focused modules. **`main.cpp`** only orchestrates the flow; all hardware quirks and logic live inside their respective libraries.
-
-```text
-src/
-├── ai/
-│   ├── GeminiClient.* # Low-level HTTPS + Gemini API client
-│   ├── GeminiService.* # Retry, backoff, and error handling
-│   └── GeminiPrompts.* # Standardized prompts (ASCII-only)
-│
-├── core/
-│   └── Logger.* # Structured logging and status decoding
-│
-├── display/
-│   └── DisplayManager.* # OLED bring-up, layout, and UI rendering
-│
-├── net/
-│   └── WifiManager.* # Wi-Fi initialization and connection
-│
-├── diag/
-│   └── I2CDiagnostic.* # I2C scan and diagnostics (Heltec V2 aware)
-│
-├── config.h             # Central configuration
-└── main.cpp             # High-level application flow
-```
-
-
-**Key idea:**  
-`main.cpp` only orchestrates the flow.  
-All hardware quirks and logic live inside their respective libraries.
-
----
-
 ## Hardware Requirements
 
 | Component | Description |
@@ -216,18 +182,6 @@ This logic is handled by `GeminiPrompts`.
 
 ---
 
-## Learning Goals
-
-This project is designed to demonstrate:
-
-- Real-world ESP32 hardware quirks  
-- Clean embedded architecture  
-- AI integration on constrained devices  
-- Display UI design for small screens  
-- Defensive networking and error handling  
-
----
-
 ## Author
 
 **Daniel Gier Arndt**
@@ -240,8 +194,3 @@ YouTube: [*@LabEmbarcado*](https://www.youtube.com/@LabEmbarcado)
 
 This is **not a tutorial-style repository**.  
 It is a **clean, practical demo** focused on real embedded constraints and solutions.
-
-Contributions and experiments are welcome.
-
-
-
